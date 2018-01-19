@@ -1,0 +1,18 @@
+<style>
+    .tabbar::after {
+      content: none;
+    }
+  </style>
+
+<ion-tabs #ionTabs [scrollable-tabs]="ionTabs" [opts]="scrollableTabsopts" selectedIndex='0' color="{{tabsColor}}" mode='{{tabsMode}}'	tabsHighlight="true" tabsPlacement="{{tabsPlacement}}" >
+
+  <ion-tab [root]="tab1Root" [show]='tabToShow[0]' tabIcon="home" ></ion-tab>
+  <ion-tab [root]="tab2Root" [show]='tabToShow[1]' tabTitle="Pronostici" ></ion-tab>
+  <ion-tab [root]="tab3Root" [show]='tabToShow[2]' tabTitle="Multiple" ></ion-tab>
+  <ion-tab [root]="tab4Root" [show]='tabToShow[3]' tabTitle="Basket" ></ion-tab>
+  <ion-tab [root]="tab5Root" [show]='tabToShow[4]' tabTitle="Progressione" ></ion-tab>
+  <ion-tab [root]="tab6Root" [show]='tabToShow[5]' tabTitle="UltimeVincite" ></ion-tab>
+  <ion-tab [root]="tab7Root" [show]='tabToShow[6]' tabTitle="Bonus" ></ion-tab>
+  
+</ion-tabs>
+

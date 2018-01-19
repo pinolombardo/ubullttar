@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title innerHtml="{{post.title | slice:0:48  }}... " style="text-align: justify;" ></ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+ 
+<ion-content class="home" padding>
+    <div *ngIf="post" class="selection">
+       
+                <ion-avatar item-left image-large>
+                  <img src="{{post.thumbnail.replace('-150x150','')}}"/>
+                </ion-avatar>
+               
+                <p [innerHTML]=post.content style="text-align: justify;"></p>   
+                    
+    </div>
+</ion-content>
