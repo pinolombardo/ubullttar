@@ -18,7 +18,7 @@ export class BonusPage {
 
   getPosts() {
     {
-        this.restProvider.getDataVincite().subscribe(
+        this.restProvider.getDataBonus().subscribe(
             data => {
                 this.posts =this.sanitizer.bypassSecurityTrustHtml(data.page.content);
                 console.log(data); 
@@ -52,7 +52,7 @@ export class BonusPage {
      });   
    
      loader.present().then(() => {
-       this.restProvider.getDataVincite().subscribe(
+       this.restProvider.getDataBonus().subscribe(
         data => {
           this.posts =this.sanitizer.bypassSecurityTrustHtml(data.page.content);
           console.log(data); 

@@ -46,7 +46,7 @@ export class RestProvider {
       }
 
       getDataVincite() {
-        var url = 'http://www.ubullttar.it/?json=get_page&page_id=1815'; 
+        var url = 'http://www.ubullttar.it/?json=get_page&page_id=1790'; 
         var response = this.http.get(url).map(res => res.json());
         console.log(response);
         return response;
